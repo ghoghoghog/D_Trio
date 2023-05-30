@@ -26,13 +26,4 @@ public class Castle_Ctrl : MonoBehaviour
     {
         _Hp.text = Current_Hp + " / " + Hp; //���� ü�� + " / " + �� ü��
     }
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "People_1")
-        {
-            
-        }
-    }
-    
 }

@@ -34,7 +34,6 @@ public class People_1_Ctrl : MonoBehaviour
     {
         _Name.text = People_1_Name;
         Castle = GameObject.FindGameObjectWithTag("Castle");
-        curtime = cooltime;
     }
 
     void Awake()
@@ -95,9 +94,8 @@ public class People_1_Ctrl : MonoBehaviour
             if (curtime <= 0)
             {
                 anim.SetBool("isAttack", true);
-                //Current_Hp -= People_1.GetComponent<People_1_Ctrl>().Attack;
-                collision.gameObject.GetComponent<Castle_Ctrl>().Current_Hp -= Attack;
                 curtime = cooltime;
+                collision.gameObject.GetComponent<Castle_Ctrl>().Current_Hp -= Attack;
             }
             curtime -= Time.deltaTime;
         }

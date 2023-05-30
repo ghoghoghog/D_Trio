@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   snowballSpeed: 2
-  Attack: 5
+  Attack: 2
 --- !u!50 &7548850636042754459
 Rigidbody2D:
   serializedVersion: 4

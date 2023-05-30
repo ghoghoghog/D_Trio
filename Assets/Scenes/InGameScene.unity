@@ -386,9 +386,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1aeede201f46b5a448b2ec93a93cfee1, type: 3}
+    m_Font: {fileID: 12800000, guid: 44990abcc345f2d48960fbef14db383b, type: 3}
     m_FontSize: 20
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -466,9 +466,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1aeede201f46b5a448b2ec93a93cfee1, type: 3}
+    m_Font: {fileID: 12800000, guid: 44990abcc345f2d48960fbef14db383b, type: 3}
     m_FontSize: 20
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -886,9 +886,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1aeede201f46b5a448b2ec93a93cfee1, type: 3}
+    m_Font: {fileID: 12800000, guid: 44990abcc345f2d48960fbef14db383b, type: 3}
     m_FontSize: 30
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 40
@@ -1902,7 +1902,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248225015}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.6, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2006,7 +2006,7 @@ Transform:
   m_GameObject: {fileID: 1249982652}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.95, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2046,7 +2046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   People_1: {fileID: 1421131981}
-  Castle_Name: "\uC131"
+  Castle_Name: Snow Castle
   Current_Hp: 100
   Hp: 100
   _Name: {fileID: 2020000463}
@@ -2256,14 +2256,14 @@ MonoBehaviour:
   Castle: {fileID: 1249982652}
   Snowball1: {fileID: 3359737533067860819, guid: 4acc18c4bb41ed74985d9c46bd0fc0ef, type: 3}
   Pos: {fileID: 1248225015}
-  People_1_Name: "Lv.1 \uCDE8\uAC1D"
+  People_1_Name: "Lv.1 \uC544\uC800\uC528"
   Current_Hp: 10
   Hp: 10
-  Attack: 5
+  Attack: 3
   _Name: {fileID: 193396735}
   _Hp: {fileID: 191088899}
   cooltime: 1.5
-  speed: 0.5
+  speed: 1
   target: {fileID: 1249982655}
 --- !u!50 &1421131986
 Rigidbody2D:
@@ -2633,7 +2633,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580788570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalPosition: {x: 0.8, y: 1.5, z: 0}
   m_LocalScale: {x: 0.18, y: 0.18, z: 0.18}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3550,9 +3550,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1aeede201f46b5a448b2ec93a93cfee1, type: 3}
+    m_Font: {fileID: 12800000, guid: 44990abcc345f2d48960fbef14db383b, type: 3}
     m_FontSize: 30
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 40

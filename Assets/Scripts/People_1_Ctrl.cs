@@ -12,12 +12,12 @@ public class People_1_Ctrl : MonoBehaviour
     public GameObject Pos;
     public string People_1_Name;
 
-    public int Current_Hp;  //���_1�� ���� ü��
-    public int Hp;  //���_1�� �� ü��
+    public int Current_Hp;
+    public int Hp;
 
-    public int Attack;  //���_1�� ���ݷ�
-    public Text _Name;  //ȭ��� ��Ÿ���� ���_1 �̸�
-    public Text _Hp;    //ȭ��� ��Ÿ���� ���_1 ü��
+    public int Attack;
+    public Text _Name;
+    public Text _Hp;
 
     public float cooltime;
     private float curtime;
@@ -34,6 +34,7 @@ public class People_1_Ctrl : MonoBehaviour
     {
         _Name.text = People_1_Name;
         Castle = GameObject.FindGameObjectWithTag("Castle");
+        curtime = cooltime;
     }
 
     void Awake()
@@ -45,7 +46,7 @@ public class People_1_Ctrl : MonoBehaviour
 
     private void Update()
     {
-        _Hp.text = Current_Hp + " / " + Hp; //���� ü�� + " / " + �� ü��
+        _Hp.text = Current_Hp + " / " + Hp;
 
         if(Current_Hp <= 0)
         {
@@ -94,8 +95,8 @@ public class People_1_Ctrl : MonoBehaviour
             if (curtime <= 0)
             {
                 anim.SetBool("isAttack", true);
-                curtime = cooltime;
                 collision.gameObject.GetComponent<Castle_Ctrl>().Current_Hp -= Attack;
+                curtime = cooltime;
             }
             curtime -= Time.deltaTime;
         }

@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa69a6355746ce0408484124444e0260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snowballSpeed: 2
-  Attack: 2
+  snowballSpeed: 1.5
+  Attack: 4
 --- !u!50 &7548850636042754459
 Rigidbody2D:
   serializedVersion: 4

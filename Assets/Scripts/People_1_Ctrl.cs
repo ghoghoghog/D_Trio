@@ -92,6 +92,7 @@ public class People_1_Ctrl : MonoBehaviour
     {
         if (collision.gameObject.tag == "Castle")
         {
+            speed = 0;
             if (curtime <= 0)
             {
                 anim.SetBool("isAttack", true);

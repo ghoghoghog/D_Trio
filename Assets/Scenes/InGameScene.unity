@@ -2794,7 +2794,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.015793085, y: 0.031115294}
@@ -3870,6 +3870,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705017529}
   m_CullTransparentMesh: 1
+--- !u!1 &1755285105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1755285107}
+  - component: {fileID: 1755285106}
+  m_Layer: 0
+  m_Name: GameObject (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1755285106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755285105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d24cff67cf0ac840b48b95e750e2b71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sksdlehtkdtmdtlrks: 15
+  man: {fileID: 2213856117877110166, guid: 5140f4773dd0c164db60df71b25beaca, type: 3}
+--- !u!4 &1755285107
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755285105}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1814890934
 GameObject:
   m_ObjectHideFlags: 0
@@ -4524,7 +4570,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038836035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.74, y: -2.91, z: -0.03526631}
+  m_LocalPosition: {x: 8.74, y: -4.03, z: -0.03526631}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4631,6 +4677,7 @@ MonoBehaviour:
   objectPrefab: {fileID: 3359737533067860819, guid: 4acc18c4bb41ed74985d9c46bd0fc0ef, type: 3}
   spawnPoint: {fileID: 1580788572}
   spawnInterval: 1
+  tmzlfthreh: 0.1
   launchForce: 20
   cooltime: 10
   wlthrtlrks: 5

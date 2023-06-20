@@ -7,64 +7,51 @@ public class test : MonoBehaviour
     public GameObject objectPrefab;
     public Transform spawnPoint;
     public float spawnInterval = 1;
+    public float tmzlfthreh = 0.1f;
     public float launchForce = 10f;
     public float cooltime = 10;
     private float spawnTimer;
     public float wlthrtlrks = 5f;
     
-    private bool isCooldown = false;
+    
 
     private void Start()
     {
         spawnTimer = spawnInterval;
         cooltime = 0;
+        wlthrtlrks = 0;
     }
 
     private void Update()
     {
         spawnTimer -= Time.deltaTime;
+        cooltime -= Time.deltaTime;
+        wlthrtlrks -= Time.deltaTime;
 
         if (cooltime <= 0f && Input.GetKeyDown(KeyCode.Alpha1))
         {
-            if (isCooldown)
-            {
-                // ÄðÅ¸ÀÓÀÌ ³¡³ª°í 1¹ø Å°¸¦ ´©¸¥ °æ¿ì
-                spawnTimer = 0.1f; // ½ºÆù °£°ÝÀ» ÁÙÀÓ
-                wlthrtlrks -= Time.deltaTime; // Áö¼Ó½Ã°£ °¨¼Ò
-                if (wlthrtlrks <= 0f)
-                {
-                    spawnTimer = 1f; // »ý¼º½Ã°£À» 1·Î ¼³Á¤
-                    cooltime = 10f; // ÄðÅ¸ÀÓÀ» ´Ù½Ã ¼³Á¤
-                    isCooldown = true; // Äð´Ù¿î »óÅÂ·Î ¼³Á¤
-                    wlthrtlrks = 5f; // Áö¼Ó½Ã°£À» ´Ù½Ã ¼³Á¤
-                }
-            }
-            else
-            {
-                // ÄðÅ¸ÀÓÀÌ ¾ÆÁ÷ ³²Àº °æ¿ì
-                Debug.Log("Cooling down...");
-            }
+            Debug.Log("ì§€ì†ì‹œê°„: " + wlthrtlrks);
+            Debug.Log("ì¿¨íƒ€ìž„: " + cooltime);
+            wlthrtlrks = 5;
+            cooltime = 10;
         }
 
-        if (spawnTimer <= 0f)
+        if (wlthrtlrks>=0&& spawnTimer<=0)
         {
             SpawnObject();
-            spawnTimer = spawnInterval;
+            spawnTimer = 0.1f;
+            spawnTimer = tmzlfthreh;
         }
-
-        // ÄðÅ¸ÀÓ °¨¼Ò
-        if (isCooldown)
+        
+        if (spawnTimer <= 0f&& wlthrtlrks<=0)
         {
-            cooltime -= Time.deltaTime;
-            if (cooltime <= 0f)
-            {
-                isCooldown = false;
-                Debug.Log("Cooldown finished.");
-            }
+            SpawnObject();
+            spawnTimer = 1;
         }
 
-        Debug.Log("Áö¼Ó½Ã°£: " + wlthrtlrks);
-        Debug.Log("ÄðÅ¸ÀÓ: " + cooltime);
+       
+
+        
     }
 
     private void SpawnObject()

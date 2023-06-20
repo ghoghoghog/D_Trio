@@ -51,7 +51,7 @@ public class manmove : MonoBehaviour
             sksdlehtkdtmd += 10;
             sksdleh = dnjsfosksdleh + sksdlehtkdtmd;
         }
-    
+        curtime -= Time.deltaTime;
     
     }
 
@@ -63,6 +63,7 @@ public class manmove : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         if (collision.gameObject.tag == "Snowball_1")
         {
             Current_Hp -= 5;
@@ -71,19 +72,27 @@ public class manmove : MonoBehaviour
         {
             Current_Hp -= 20;
         }
+
+        
     }
-    private void OnCollisionStay2D(Collision2D collision)
+    
+
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (collision.gameObject.tag == "Castle")
+
+        if (other.gameObject.tag == "Castle")
         {
+            
             speed = 0;
             if (curtime <= 0)
             {
+                Debug.Log("cnddehf");
                 anim.SetBool("isAttack", true);
-                collision.gameObject.GetComponent<Castle_Ctrl>().Current_Hp -= Attack;
+                other.gameObject.GetComponent<Castle_Ctrl>().Current_Hp -= Attack;
                 curtime = cooltime;
             }
-            curtime -= Time.deltaTime;
+
+            
         }
     }
 }
